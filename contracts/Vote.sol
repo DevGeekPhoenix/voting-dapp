@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.0;
 
-contract VoteDapp {
+contract Vote {
     uint256 public NextJsVotes = 0;
     uint256 public NuxtJsVotes = 0;
     uint16 constant MAX_COMMENT_LENGTH = 200;
@@ -32,6 +32,8 @@ contract VoteDapp {
 
     mapping(address => Voter) public voters;
     mapping(address => Comment[]) public comments;
+
+    Comment[] public allComments;
 
     modifier onlyOneVote() {
         require(!voters[msg.sender].hasVoted, "You can only vote once!");
@@ -68,6 +70,9 @@ contract VoteDapp {
         });
 
         comments[msg.sender].push(newComment);
+
+        allComments.push(newComment);
+
         emit CommentCreated(
             newComment.id,
             newComment.author,
@@ -79,5 +84,15 @@ contract VoteDapp {
 
     function getVotes() public view returns (uint256[2] memory) {
         return [NextJsVotes, NuxtJsVotes];
+    }
+
+    function getCommentsByAddress(
+        address _owner
+    ) public view returns (Comment[] memory) {
+        return comments[_owner];
+    }
+
+    function getAllComments() public view returns (Comment[] memory) {
+        return allComments;
     }
 }

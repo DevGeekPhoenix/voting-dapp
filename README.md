@@ -60,4 +60,4 @@ Please ensure that your pull request includes a detailed description of the chan
 This project is licensed under [MIT License] - see the LICENSE file for more details.
 
 ## Authors
-- **Phoenix** - *Front-end and Blockchain Developer* - [DevGeekPhoenix](https://www.linkedin.com/in/hoseinzarrabi/)
+- **Phoenix** - *Front-end and Blockchain Developer* - [Linkedin](https://www.linkedin.com/in/hoseinzarrabi/)

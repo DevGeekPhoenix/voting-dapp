@@ -25,3 +25,33 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+#logo-container svg {
+  width: 250px;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  #logo-container svg {
+    width: 150px;
+    height: auto;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 0px;
+}
+::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f6851b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f6851b;
+}

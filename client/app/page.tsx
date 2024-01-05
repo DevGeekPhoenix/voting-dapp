@@ -85,6 +85,7 @@ export default function Home() {
    * Template
    * _______________________________________________________________________________
    */
+
   return (
     <>
       <main className="flex min-h-screen w-full flex-col items-center justify-center px-8 py-24 lg:p-24 bg-gradient-to-tr from-gray-900 to-orange-900">
@@ -101,7 +102,11 @@ export default function Home() {
         ) : (
           <>
             <div className="absolute w-full py-4 text-center font-medium top-0 bg-gradient-to-tr from-gray-900 to-orange-900">
-              <p>Time Left For Voting! {renderCountdown("")}</p>
+              <p>
+                {renderCountdown("").length === 0
+                  ? "Voting time is over !!!"
+                  : `Time Left For Voting! ${renderCountdown("")}`}
+              </p>
             </div>
             <div className="w-full h-full flex flex-col items-center justify-evenly gap-6 relative lg:flex-row">
               <div className="flex flex-col items-center justify-center gap-6 w-full  lg:w-1/2">

@@ -9,7 +9,7 @@ import { toast } from "react-toastify";
 import { IComment } from "@/src/types/comment";
 
 let web3 = typeof window !== "undefined" && new Web3(window.ethereum);
-// @ts-ignore
+
 let contract =
   web3 &&
   (new web3.eth.Contract(

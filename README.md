@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://phoenix-voting-dapp.vercel.app/" target="blank"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ficonscout.com%2Ffree-icon%2Fmetamask-2728406&psig=AOvVaw37hmSiXExCVwv1r06ebp1r&ust=1704635058061000&source=images&cd=vfe&ved=0CBMQjRxqFwoTCMiHosryyIMDFQAAAAAdAAAAABAE" width="200" alt="Nest Logo" /></a>
+  <a href="https://phoenix-voting-dapp.vercel.app/" target="blank"><img src="https://cdn.iconscout.com/icon/free/png-256/free-metamask-2728406-2261817.png" width="200" alt="Voting Dapp" /></a>
 </p>
 
 # Voting Decentralized Application (DApp)
